@@ -38,6 +38,6 @@ Simple python script to print gantt charts for single/multitasking machines
 -  For the SCH case no restrictions apply.
 
 ## Script Execution
- To execute this script `python >= 3.4` is required
- command: `plotGantt.py TYPE path/to/result/file.gantt`
-  where `TYPE` is : `MTS / SCH`
+ To execute this script `python >= 3.4` is required. \
+ **sample command**: `pyhton plotGantt.py TYPE path/to/result/file.gantt` \
+  *where* `TYPE` is : `MTS / SCH`
