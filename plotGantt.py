@@ -21,11 +21,13 @@ import math
 #
 #
 # Machine  T_begin   T_end  Operation   Batch_size
-#--------------------------------------------------
-# PU0_M0_B 0        0.833333 A          40.2
-# PU0_M0_B 1.83333  2.66667  B          80.6
-# PU2_M3_B 0.833333 1.83333  C          32
-# PU2_M3_B 2.83333  3.83333  B          50
+#------------------------------------------- sampleResult.gantt---+
+# PU0_M0_B 0        0.833333 A          40.2                        |
+# PU0_M0_B 1.83333  2.66667  B          80.6                        |
+# PU2_M3_B 0.833333 1.83333  C          32                          |
+# PU2_M3_B 2.83333  3.83333  B          50                          |
+#-------------------------------------------------------------------+
+#
 #
 # For the MTS case, the machine name has to be formatted as:
 # ProcessingUnitName_MachineName_OrderName
@@ -35,6 +37,10 @@ import math
 #       Order Name     : B
 #
 # For the SCH case no restrictions apply.
+#
+# To execute this script python >= 3.4 is required
+# command: plotGantt.py TYPE path/to/result/file.gantt
+#        +--where TYPE is : MTS / SCH
 
 
 ###############################################
